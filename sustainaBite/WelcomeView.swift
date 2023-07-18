@@ -19,41 +19,60 @@ struct WelcomeView: View {
                     .ignoresSafeArea()
                 
                 VStack {
-                    VStack(alignment: .leading, spacing: 20.0) {
+                    Text("Welcome to ")
+                        .font(Font.custom("Poppins-SemiBoldItalic", size: 40))
+                        .foregroundColor(Color("darkGreen"))
+
+                    VStack(spacing: 20.0) {
                         Image("logo")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                     }
-                    .padding()
                     .background(Rectangle()
                         .foregroundColor(.white))
                     .cornerRadius(15)
-                    .shadow(radius: 20)
+                    .shadow(radius: 15)
                     .padding(.horizontal, 30.0)
                     
                     Spacer().frame(height:50)
                     
                     HStack {
                         NavigationLink(destination: FoodView()) {
-                            Text("Let's Go!").font(.system(size:25)).fontWeight(.semibold).foregroundColor(Color("darkGreen"))
+                            Text("Recipes & Food")
+                                .font(Font.custom("Poppins-Medium", size: 22))
+                                .foregroundColor(Color("darkGreen"))
                         }
                         .padding()
                         .background(Rectangle()
                             .foregroundColor(.white))
                         .cornerRadius(15)
                         .shadow(radius: 5)
-                        .padding(.horizontal, 15.0)
+                        .padding(.horizontal, 10.0)
                         
                         NavigationLink(destination: FoodView()) {
-                            Text("Let's Go!").font(.system(size:25)).fontWeight(.semibold).foregroundColor(Color("darkGreen"))
+                            Text("Local Farmer Markets")
+                                .font(Font.custom("Poppins-Medium", size: 22))
+                                .foregroundColor(Color("darkGreen"))
                         }
                         .padding()
                         .background(Rectangle()
                             .foregroundColor(.white))
                         .cornerRadius(15)
                         .shadow(radius: 5)
-                        .padding(.horizontal, 15.0)
+                        .padding(.horizontal, 10.0)
                     }
+                    
+                    NavigationLink(destination: FoodView()) {
+                        Text("About SustainaBite 🍃")
+                            .font(Font.custom("Poppins-Medium", size: 28))
+                            .foregroundColor(Color("darkGreen"))
+                    }
+                    .padding()
+                    .background(Rectangle()
+                        .foregroundColor(.white))
+                    .cornerRadius(15)
+                    .shadow(radius: 5)
+                    .padding(.vertical, 15.0)
                     
                 }
 //                    .toolbar {
