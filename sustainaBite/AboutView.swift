@@ -32,6 +32,18 @@ struct AboutView: View {
                         .cornerRadius(15)
                         .shadow(radius: 15)
                         .padding(.horizontal, 30.0)
+                        
+                        
+                        Text("Click on the emoji's to learn more!")
+                            .font(Font.custom("Poppins-Medium", size: 18))
+                            .foregroundColor(Color("darkGreen"))
+                            .padding()
+                            .background(Rectangle()
+                                .foregroundColor(.white))
+                            .cornerRadius(15)
+                            .shadow(radius: 5)
+                            .padding(.horizontal, 17)
+                            .padding(.top)
                      
                         //-------------------------------------------------------------
                         HStack (spacing: 20.0) {
@@ -127,6 +139,17 @@ struct AboutView: View {
                             message: Text("We believe that the choices we make today shape the world we inherit tomorrow. You can be a part of a movement that celebrates and champions organic, sustainable farming practices.")
                                    )})
                         }
+                        
+                        Text("We can make a difference – one \"SustainaBite\" at a time.")
+                            .font(Font.custom("Poppins-Medium", size: 20))
+                            .foregroundColor(Color("darkGreen"))
+                            .padding()
+                            .background(Rectangle()
+                                .foregroundColor(.white))
+                            .cornerRadius(15)
+                            .shadow(radius: 5)
+                            .padding(.horizontal, 17)
+                            .padding(.vertical)
                         
                         
                     }
