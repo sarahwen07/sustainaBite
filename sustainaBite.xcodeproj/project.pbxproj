@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		BDC30DEA2A65F19900BBE0DB /* sustainaBiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC30DE92A65F19900BBE0DB /* sustainaBiteApp.swift */; };
-		BDC30DEC2A65F19900BBE0DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC30DEB2A65F19900BBE0DB /* ContentView.swift */; };
+		BDC30DEC2A65F19900BBE0DB /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC30DEB2A65F19900BBE0DB /* WelcomeView.swift */; };
 		BDC30DEE2A65F19A00BBE0DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDC30DED2A65F19A00BBE0DB /* Assets.xcassets */; };
 		BDC30DF12A65F19A00BBE0DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDC30DF02A65F19A00BBE0DB /* Preview Assets.xcassets */; };
+		BDC30DF82A65F98000BBE0DB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC30DF72A65F98000BBE0DB /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BDC30DE62A65F19900BBE0DB /* sustainaBite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sustainaBite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDC30DE92A65F19900BBE0DB /* sustainaBiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sustainaBiteApp.swift; sourceTree = "<group>"; };
-		BDC30DEB2A65F19900BBE0DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BDC30DEB2A65F19900BBE0DB /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		BDC30DED2A65F19A00BBE0DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDC30DF02A65F19A00BBE0DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BDC30DF72A65F98000BBE0DB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				BDC30DE92A65F19900BBE0DB /* sustainaBiteApp.swift */,
-				BDC30DEB2A65F19900BBE0DB /* ContentView.swift */,
+				BDC30DEB2A65F19900BBE0DB /* WelcomeView.swift */,
+				BDC30DF72A65F98000BBE0DB /* HomeView.swift */,
 				BDC30DED2A65F19A00BBE0DB /* Assets.xcassets */,
 				BDC30DEF2A65F19A00BBE0DB /* Preview Content */,
 			);
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDC30DEC2A65F19900BBE0DB /* ContentView.swift in Sources */,
+				BDC30DF82A65F98000BBE0DB /* HomeView.swift in Sources */,
+				BDC30DEC2A65F19900BBE0DB /* WelcomeView.swift in Sources */,
 				BDC30DEA2A65F19900BBE0DB /* sustainaBiteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
