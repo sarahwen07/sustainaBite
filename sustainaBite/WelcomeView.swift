@@ -15,6 +15,7 @@ struct WelcomeView: View {
     var body: some View {
         NavigationStack {
             ZStack {
+                Text("hello")
                 Color("almond")
                     .ignoresSafeArea()
                 VStack {
