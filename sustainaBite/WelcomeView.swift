@@ -17,6 +17,7 @@ struct WelcomeView: View {
             ZStack {
                 Color("almond")
                     .ignoresSafeArea()
+                
                 VStack {
                     VStack(alignment: .leading, spacing: 20.0) {
                         Image("logo")
@@ -32,17 +33,36 @@ struct WelcomeView: View {
                     
                     Spacer().frame(height:50)
                     
-                    NavigationLink(destination: HomeView()) {
-                        Text("Let's Go!").font(.system(size:25)).fontWeight(.semibold).foregroundColor(Color("darkGreen"))
+                    HStack {
+                        NavigationLink(destination: FoodView()) {
+                            Text("Let's Go!").font(.system(size:25)).fontWeight(.semibold).foregroundColor(Color("darkGreen"))
+                        }
+                        .padding()
+                        .background(Rectangle()
+                            .foregroundColor(.white))
+                        .cornerRadius(15)
+                        .shadow(radius: 5)
+                        .padding(.horizontal, 15.0)
+                        
+                        NavigationLink(destination: FoodView()) {
+                            Text("Let's Go!").font(.system(size:25)).fontWeight(.semibold).foregroundColor(Color("darkGreen"))
+                        }
+                        .padding()
+                        .background(Rectangle()
+                            .foregroundColor(.white))
+                        .cornerRadius(15)
+                        .shadow(radius: 5)
+                        .padding(.horizontal, 15.0)
                     }
-                    .padding()
-                    .background(Rectangle()
-                        .foregroundColor(.white))
-                    .cornerRadius(15)
-                    .shadow(radius: 5)
-                    .padding(.horizontal, 30.0)
                     
                 }
+//                    .toolbar {
+//                        ToolbarItem(placement: .status) {
+//                            Button("Press Me") {
+//                                print("pressed")
+//                            }
+//                        }
+//                    }
             }
         }
     }

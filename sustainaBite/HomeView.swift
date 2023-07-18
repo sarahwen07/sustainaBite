@@ -9,7 +9,23 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            VStack {
+                Text("hello")
+            }
+            .toolbar {
+                ToolbarItemGroup(placement: .status) {
+                    NavigationLink(destination: FoodView()) {
+                        Text("❓")
+                            .font(.system(size: 56))
+                    }
+                    .navigationBarTitleDisplayMode(.inline)
+                    .navigationBarHidden(false)
+                    
+                    
+                }
+            }
+        }
     }
 }
 
