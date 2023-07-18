@@ -15,7 +15,6 @@ struct WelcomeView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Text("hello")
                 Color("almond")
                     .ignoresSafeArea()
                 VStack {
@@ -34,7 +33,7 @@ struct WelcomeView: View {
                     Spacer().frame(height:50)
                     
                     NavigationLink(destination: HomeView()) {
-                        Text("Let's Go!").font(.system(size:25)).fontWeight(.bold).foregroundColor(Color("darkGreen"))
+                        Text("Let's Go!").font(.system(size:25)).fontWeight(.semibold).foregroundColor(Color("darkGreen"))
                     }
                     .padding()
                     .background(Rectangle()
