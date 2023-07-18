@@ -20,7 +20,7 @@ struct WelcomeView: View {
                 
                 VStack {
                     Text("Welcome to ")
-                        .font(Font.custom("Poppins-SemiBoldItalic", size: 40))
+                        .font(Font.custom("Poppins-BoldItalic", size: 40))
                         .foregroundColor(Color("darkGreen"))
 
                     VStack(spacing: 20.0) {
@@ -62,7 +62,7 @@ struct WelcomeView: View {
                         .padding(.horizontal, 10.0)
                     }
                     
-                    NavigationLink(destination: FoodView()) {
+                    NavigationLink(destination: AboutView()) {
                         Text("About SustainaBite 🍃")
                             .font(Font.custom("Poppins-Medium", size: 28))
                             .foregroundColor(Color("darkGreen"))
