@@ -24,10 +24,12 @@ struct WelcomeView: View {
                         .foregroundColor(Color("darkGreen"))
 
                     VStack(spacing: 20.0) {
-                        Image("logo")
+                        Image("tomato")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                     }
+                    .cornerRadius(10)
+                    .padding()
                     .background(Rectangle()
                         .foregroundColor(.white))
                     .cornerRadius(15)
@@ -49,7 +51,7 @@ struct WelcomeView: View {
                         .shadow(radius: 5)
                         .padding(.horizontal, 10.0)
                         
-                        NavigationLink(destination: FoodView()) {
+                        NavigationLink(destination: MapView()) {
                             Text("Local Farmer Markets")
                                 .font(Font.custom("Poppins-Medium", size: 22))
                                 .foregroundColor(Color("darkGreen"))
