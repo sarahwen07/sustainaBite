@@ -75,14 +75,9 @@ struct WelcomeView: View {
                     .padding(.vertical, 15.0)
                     
                 }
-//                    .toolbar {
-//                        ToolbarItem(placement: .status) {
-//                            Button("Press Me") {
-//                                print("pressed")
-//                            }
-//                        }
-//                    }
             }
+            .listStyle(.plain)
+            .accentColor(Color("AccentColor"))
         }
     }
 }

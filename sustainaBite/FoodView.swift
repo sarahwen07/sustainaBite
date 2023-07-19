@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct FoodView: View {
+    @State private var searchText = ""
     var body: some View {
-        Text("Hello, world!")
-            .font(Font.custom("Poppins-Italic", size: 18))
+        NavigationStack {
+            ZStack {
+                Color("almond")
+                    .ignoresSafeArea()
+                
+                VStack {
+                    Text("Hello, world!")
+                        .font(Font.custom("Poppins-Italic", size: 18))
+                        .searchable(text: $searchText)
+                }
+            }
+        }
     }
 }
 

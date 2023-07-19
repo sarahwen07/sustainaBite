@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD50435C2A68576D00FCE299 /* FarmersMarket.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD50435B2A68576D00FCE299 /* FarmersMarket.swift */; };
 		BD5E636A2A670CE7009B9EDE /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5E63692A670CE7009B9EDE /* AboutView.swift */; };
 		BDC30DEA2A65F19900BBE0DB /* sustainaBiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC30DE92A65F19900BBE0DB /* sustainaBiteApp.swift */; };
 		BDC30DEC2A65F19900BBE0DB /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC30DEB2A65F19900BBE0DB /* WelcomeView.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD50435B2A68576D00FCE299 /* FarmersMarket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmersMarket.swift; sourceTree = "<group>"; };
 		BD5E63542A67020A009B9EDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BD5E63562A670330009B9EDE /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		BD5E63572A670330009B9EDE /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				BDC30DE92A65F19900BBE0DB /* sustainaBiteApp.swift */,
 				BDC30DEB2A65F19900BBE0DB /* WelcomeView.swift */,
 				BD5E63692A670CE7009B9EDE /* AboutView.swift */,
+				BD50435B2A68576D00FCE299 /* FarmersMarket.swift */,
 				BDC30DFB2A66F59E00BBE0DB /* Welcome.storyboard */,
 				BDC30DF92A66F58E00BBE0DB /* FoodView.swift */,
 				BDC30DED2A65F19A00BBE0DB /* Assets.xcassets */,
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD5E636A2A670CE7009B9EDE /* AboutView.swift in Sources */,
+				BD50435C2A68576D00FCE299 /* FarmersMarket.swift in Sources */,
 				BDC30DFA2A66F58E00BBE0DB /* FoodView.swift in Sources */,
 				BDC30DEC2A65F19900BBE0DB /* WelcomeView.swift in Sources */,
 				BDC30DEA2A65F19900BBE0DB /* sustainaBiteApp.swift in Sources */,

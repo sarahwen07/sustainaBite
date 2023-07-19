@@ -124,7 +124,7 @@ struct AboutView: View {
                             //----------------------------------------------------
                             Button (
                                 action : { presentAlert5 = true},
-                                label : {Text("🍎")
+                                label : {Text("🌎")
                                     .font(.system(size: 50))
                                     .padding()
                                     .background(Rectangle()
