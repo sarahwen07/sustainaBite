@@ -80,7 +80,7 @@ struct WelcomeView: View {
             }
             .listStyle(.plain)
             .accentColor(Color("AccentColor"))
-        }
+        }.navigationBarBackButtonHidden(true)
     }
 }
 

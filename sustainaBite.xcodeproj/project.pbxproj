@@ -17,6 +17,7 @@
 		BDC30DF12A65F19A00BBE0DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDC30DF02A65F19A00BBE0DB /* Preview Assets.xcassets */; };
 		BDC30DFA2A66F58E00BBE0DB /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC30DF92A66F58E00BBE0DB /* FoodView.swift */; };
 		BDC30DFC2A66F59E00BBE0DB /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC30DFB2A66F59E00BBE0DB /* Welcome.storyboard */; };
+		BDCF86C62A69DD8400C5B8C7 /* MapViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCF86C52A69DD8400C5B8C7 /* MapViewX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		BDC30DF02A65F19A00BBE0DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BDC30DF92A66F58E00BBE0DB /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
 		BDC30DFB2A66F59E00BBE0DB /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		BDCF86C52A69DD8400C5B8C7 /* MapViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewX.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				BD8EBD7E2A6992E2005BBA7A /* dataSets.swift */,
 				BDC30DFB2A66F59E00BBE0DB /* Welcome.storyboard */,
 				BDC30DF92A66F58E00BBE0DB /* FoodView.swift */,
+				BDCF86C52A69DD8400C5B8C7 /* MapViewX.swift */,
 				BDC30DED2A65F19A00BBE0DB /* Assets.xcassets */,
 				BDC30DEF2A65F19A00BBE0DB /* Preview Content */,
 			);
@@ -206,6 +209,7 @@
 			files = (
 				BD8EBD7F2A6992E2005BBA7A /* dataSets.swift in Sources */,
 				BD5E636A2A670CE7009B9EDE /* AboutView.swift in Sources */,
+				BDCF86C62A69DD8400C5B8C7 /* MapViewX.swift in Sources */,
 				BD7F87212A6862E300BB59D6 /* MapView.swift in Sources */,
 				BDC30DFA2A66F58E00BBE0DB /* FoodView.swift in Sources */,
 				BD8EBD812A699E66005BBA7A /* MapSecond.swift in Sources */,

@@ -203,12 +203,11 @@ struct AboutView: View {
                         }
                         .padding(.top)
                         .navigationBarTitleDisplayMode(.inline)
-                        .navigationBarHidden(false)
                         
                     }
 
                 }
-        }
+        }.navigationBarBackButtonHidden(true)
     }
 }
 

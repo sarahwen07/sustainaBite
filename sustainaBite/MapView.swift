@@ -118,13 +118,11 @@ struct MapView: View {
                             }
                             .padding(.top)
                             .navigationBarTitleDisplayMode(.inline)
-                            .navigationBarHidden(false)
-                            
+
                         }
                     }
             }
-            
-        }
+        }.navigationBarBackButtonHidden(true)
     }
 }
     
