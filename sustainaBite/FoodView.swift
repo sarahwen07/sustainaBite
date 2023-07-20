@@ -108,20 +108,47 @@ struct FoodView: View {
     NavigationView{
       ZStack {
         Form {
-          Section(header: Text("Filter Options")) {
+          Section(header: Text("Filter Options")
+                .font(Font.custom("Poppins-SemiBold", size: 20))
+                .foregroundColor(Color("darkGreen"))
+              ) {
             Toggle("Vegan", isOn: $showVeganOnly)
+                  .font(Font.custom("Poppins-Regular", size: 18))
+                  .foregroundColor(Color("darkGreen"))
+              
             Toggle("Vegetarian", isOn: $showVegetarianOnly)
+                  .font(Font.custom("Poppins-Regular", size: 18))
+                  .foregroundColor(Color("darkGreen"))
+              
             Toggle("Dairy-Free", isOn: $showDairyFreeOnly)
+                  .font(Font.custom("Poppins-Regular", size: 18))
+                  .foregroundColor(Color("darkGreen"))
+              
             Toggle("Gluten-Free", isOn: $showGlutenFreeOnly)
+                  .font(Font.custom("Poppins-Regular", size: 18))
+                  .foregroundColor(Color("darkGreen"))
+              
             Toggle("Nut-Free", isOn: $showNoNuts)
+                  .font(Font.custom("Poppins-Regular", size: 18))
+                  .foregroundColor(Color("darkGreen"))
+              
             Toggle("Seafood-Free", isOn: $showNoSeafood)
+                  .font(Font.custom("Poppins-Regular", size: 18))
+                  .foregroundColor(Color("darkGreen"))
           }
           .foregroundColor(Color("darkGreen"))
           .listRowBackground(Color("offWhite"))
           .tint(Color("lapisBlue"))
-          Section(header: Text("Filtered Food Items")) {
+            
+        //------------------ Font Changes ------------------
+          Section(header: Text("Filtered Food Items")
+                .font(Font.custom("Poppins-SemiBold", size: 20))
+                .foregroundColor(Color("darkGreen"))
+            ) {
             ForEach(filteredFoodItems) { food in
-              Text(food.name)
+                Text(food.name)
+                    .font(Font.custom("Poppins-Regular", size: 18))
+                    .foregroundColor(Color("darkGreen"))
             }
           }
           .foregroundColor(Color("darkGreen"))
@@ -130,6 +157,58 @@ struct FoodView: View {
         .background(Color("almond"))
         .scrollContentBackground(.hidden)
         .navigationBarTitle("Food Filters")
+        .toolbar{
+              ToolbarItemGroup(placement: .status) {
+                  NavigationLink(destination: WelcomeView()) {
+                      Image("homeIcon")
+                          .resizable(capInsets: EdgeInsets())
+                          .aspectRatio(contentMode: .fit)
+                          .padding(.vertical)
+                          .frame(width: 100.0, height: 80.0)
+                  }
+                  .padding(.top)
+                  .navigationBarTitleDisplayMode(.inline)
+                  .navigationBarHidden(false)
+                  
+                  NavigationLink(destination: MapView()) {
+                      Image("mapIcon")
+                          .resizable(capInsets: EdgeInsets())
+                          .aspectRatio(contentMode: .fit)
+                          .padding(.vertical)
+                          .frame(width: 100.0, height: 80.0)
+                          .padding(.horizontal, -30)
+                  }
+                  .padding(.top)
+                  .navigationBarTitleDisplayMode(.inline)
+                  .navigationBarHidden(false)
+                  
+                  
+                  NavigationLink(destination: FoodView()) {
+                      Image("searchIcon")
+                          .resizable(capInsets: EdgeInsets())
+                          .aspectRatio(contentMode: .fit)
+                          .padding(.vertical)
+                          .frame(width: 100.0, height: 80.0)
+                          .padding(.trailing, -30)
+                  }
+                  .padding(.top)
+                  .navigationBarTitleDisplayMode(.inline)
+                  .navigationBarHidden(false)
+                 
+                  NavigationLink(destination: AboutView()) {
+                      Image("infoIcon")
+                          .resizable(capInsets: EdgeInsets())
+                          .aspectRatio(contentMode: .fit)
+                          .padding(.vertical)
+                          .frame(width: 100.0, height: 80.0)
+                  }
+                  .padding(.top)
+                  .navigationBarTitleDisplayMode(.inline)
+                  .navigationBarHidden(false)
+                  
+              }
+
+          }
       }
       Color("almond").ignoresSafeArea()
     }

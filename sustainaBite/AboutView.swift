@@ -155,27 +155,51 @@ struct AboutView: View {
                     }
                 }.frame(maxHeight: .infinity)
             }.background(Color("almond").ignoresSafeArea())
+            
                 .toolbar {
                     ToolbarItemGroup(placement: .status) {
                         NavigationLink(destination: WelcomeView()) {
-                            Image("mapIcon")
-                                .frame(width: 100.0, height: 100.0)
+                            Image("homeIcon")
+                                .resizable(capInsets: EdgeInsets())
+                                .aspectRatio(contentMode: .fit)
+                                .padding(.vertical)
+                                .frame(width: 100.0, height: 80.0)
                         }
                         .padding(.top)
                         .navigationBarTitleDisplayMode(.inline)
                         .navigationBarHidden(false)
                         
                         NavigationLink(destination: MapView()) {
-                            Text("📱")
-                                .font(.system(size: 56))
+                            Image("mapIcon")
+                                .resizable(capInsets: EdgeInsets())
+                                .aspectRatio(contentMode: .fit)
+                                .padding(.vertical)
+                                .frame(width: 100.0, height: 80.0)
+                                .padding(.horizontal, -30)
+                        }
+                        .padding(.top)
+                        .navigationBarTitleDisplayMode(.inline)
+                        .navigationBarHidden(false)
+                        
+                        
+                        NavigationLink(destination: FoodView()) {
+                            Image("searchIcon")
+                                .resizable(capInsets: EdgeInsets())
+                                .aspectRatio(contentMode: .fit)
+                                .padding(.vertical)
+                                .frame(width: 100.0, height: 80.0)
+                                .padding(.trailing, -30)
                         }
                         .padding(.top)
                         .navigationBarTitleDisplayMode(.inline)
                         .navigationBarHidden(false)
                        
-                        NavigationLink(destination: FoodView()) {
-                            Text("✋")
-                                .font(.system(size: 56))
+                        NavigationLink(destination: AboutView()) {
+                            Image("infoIcon")
+                                .resizable(capInsets: EdgeInsets())
+                                .aspectRatio(contentMode: .fit)
+                                .padding(.vertical)
+                                .frame(width: 100.0, height: 80.0)
                         }
                         .padding(.top)
                         .navigationBarTitleDisplayMode(.inline)

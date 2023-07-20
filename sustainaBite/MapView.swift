@@ -40,8 +40,8 @@ struct MapView: View {
                                 .shadow(radius: 5)
                                 .padding(.horizontal, -100)
                             
-                                                        
-                                
+                            
+                            
                             Map(coordinateRegion: $mapRegion,
                                 annotationItems: mapLocations,
                                 annotationContent: {locations in
@@ -66,22 +66,74 @@ struct MapView: View {
                                 .foregroundColor(.white))
                             .cornerRadius(15)
                             .shadow(radius: 5)
-                                
+                            
                         }
                         .padding([.leading, .bottom, .trailing], 100.0)
                     }
                 }.background(Color("almond").ignoresSafeArea())
+                    .toolbar {
+                        ToolbarItemGroup(placement: .status) {
+                            NavigationLink(destination: WelcomeView()) {
+                                Image("homeIcon")
+                                    .resizable(capInsets: EdgeInsets())
+                                    .aspectRatio(contentMode: .fit)
+                                    .padding(.vertical)
+                                    .frame(width: 100.0, height: 80.0)
+                            }
+                            .padding(.top)
+                            .navigationBarTitleDisplayMode(.inline)
+                            .navigationBarHidden(false)
+                            
+                            NavigationLink(destination: MapView()) {
+                                Image("mapIcon")
+                                    .resizable(capInsets: EdgeInsets())
+                                    .aspectRatio(contentMode: .fit)
+                                    .padding(.vertical)
+                                    .frame(width: 100.0, height: 80.0)
+                                    .padding(.horizontal, -30)
+                            }
+                            .padding(.top)
+                            .navigationBarTitleDisplayMode(.inline)
+                            .navigationBarHidden(false)
+                            
+                            
+                            NavigationLink(destination: FoodView()) {
+                                Image("searchIcon")
+                                    .resizable(capInsets: EdgeInsets())
+                                    .aspectRatio(contentMode: .fit)
+                                    .padding(.vertical)
+                                    .frame(width: 100.0, height: 80.0)
+                                    .padding(.trailing, -30)
+                            }
+                            .padding(.top)
+                            .navigationBarTitleDisplayMode(.inline)
+                            .navigationBarHidden(false)
+                            
+                            NavigationLink(destination: AboutView()) {
+                                Image("infoIcon")
+                                    .resizable(capInsets: EdgeInsets())
+                                    .aspectRatio(contentMode: .fit)
+                                    .padding(.vertical)
+                                    .frame(width: 100.0, height: 80.0)
+                            }
+                            .padding(.top)
+                            .navigationBarTitleDisplayMode(.inline)
+                            .navigationBarHidden(false)
+                            
+                        }
+                    }
             }
+            
         }
-        
     }
 }
     
-struct MapView_Previews: PreviewProvider {
-    static var previews: some View {
-        MapView()
+    struct MapView_Previews: PreviewProvider {
+        static var previews: some View {
+            MapView()
+        }
     }
-}
     
+    
+    //     MapAnnotation(coordinate: locations.coordinate, content:{Text(locations.name)})
 
-//     MapAnnotation(coordinate: locations.coordinate, content:{Text(locations.name)})
