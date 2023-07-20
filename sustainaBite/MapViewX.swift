@@ -21,8 +21,8 @@ struct MapViewX: View {
   NavigationStack {
    ScrollView {
     VStack {
-      Text("Local Groceries / Farmer Market")
-      .font(Font.custom("Poppins-Medium", size: 20))
+      Text("Local Farmer's Markets")
+      .font(Font.custom("Poppins-Medium", size: 23))
       .foregroundColor(Color("darkGreen"))
       .padding()
 //      .background(Rectangle()
@@ -60,6 +60,59 @@ struct MapViewX: View {
           .shadow(radius: 5)
           .padding(.horizontal, -100)
           .offset(y: 30)
+      }
+        
+      .toolbar {
+          ToolbarItemGroup(placement: .status) {
+              NavigationLink(destination: WelcomeView()) {
+                  Image("homeIcon")
+                      .resizable(capInsets: EdgeInsets())
+                      .aspectRatio(contentMode: .fit)
+                      .padding(.vertical)
+                      .frame(width: 100.0, height: 80.0)
+              }
+              .padding(.top)
+              .navigationBarTitleDisplayMode(.inline)
+              .navigationBarHidden(false)
+              
+              NavigationLink(destination: MapViewX()) {
+                  Image("mapIcon")
+                      .resizable(capInsets: EdgeInsets())
+                      .aspectRatio(contentMode: .fit)
+                      .padding(.vertical)
+                      .frame(width: 100.0, height: 80.0)
+                      .padding(.horizontal, -30)
+              }
+              .padding(.top)
+              .navigationBarTitleDisplayMode(.inline)
+              .navigationBarHidden(false)
+              
+              
+              NavigationLink(destination: FoodView()) {
+                  Image("searchIcon")
+                      .resizable(capInsets: EdgeInsets())
+                      .aspectRatio(contentMode: .fit)
+                      .padding(.vertical)
+                      .frame(width: 100.0, height: 80.0)
+                      .padding(.trailing, -30)
+              }
+              .padding(.top)
+              .navigationBarTitleDisplayMode(.inline)
+              .navigationBarHidden(false)
+             
+              NavigationLink(destination: AboutView()) {
+                  Image("infoIcon")
+                      .resizable(capInsets: EdgeInsets())
+                      .aspectRatio(contentMode: .fit)
+                      .padding(.vertical)
+                      .frame(width: 100.0, height: 80.0)
+              }
+              .padding(.top)
+              .navigationBarTitleDisplayMode(.inline)
+              .navigationBarBackButtonHidden(true)
+              
+          }
+
       }
     }
       .padding([.leading, .bottom, .trailing], 100.0)

@@ -147,12 +147,12 @@ struct FoodView: View {
             Section(header: Text("Food Items - Click for Recipe!")
                   .font(Font.custom("Poppins-SemiBold", size: 19))
                   .foregroundColor(Color("darkGreen"))
-                    
               )
-              {
-              ForEach(filteredFoodItems) { food in
+              {ForEach(filteredFoodItems) { food in
                   Link(destination: food.webpageURL!) {
                       Text(food.name)
+                          .font(Font.custom("Poppins-Regular", size: 18))
+                          .foregroundColor(Color("darkGreen"))
                   }
               }
             }

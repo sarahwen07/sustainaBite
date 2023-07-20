@@ -20,9 +20,11 @@ struct WelcomeView: View {
                 
                 VStack {
                     Text("Welcome to ")
-                        .font(Font.custom("Poppins-BoldItalic", size: 40))
+                        .font(Font.custom("Poppins-Italic", size: 35))
                         .foregroundColor(Color("darkGreen"))
-
+                    Text("SustainaBite")
+                        .font(Font.custom("Poppins-BoldItalic", size: 45))
+                        .foregroundColor(Color("darkGreen"))
                     VStack(spacing: 20.0) {
                         Image("tomato")
                             .resizable()

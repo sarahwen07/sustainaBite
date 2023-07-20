@@ -13,7 +13,7 @@ struct StoreView: View {
       List {
      ForEach(stores, id: \.self) { store in
           HStack {
-            Text(store.capitalized)
+              Text(store.capitalized)
               .foregroundColor(Color("darkGreen"))
           Spacer()
         }

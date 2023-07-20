@@ -19,6 +19,25 @@
 		BDC30DFC2A66F59E00BBE0DB /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC30DFB2A66F59E00BBE0DB /* Welcome.storyboard */; };
 		BDCF86C62A69DD8400C5B8C7 /* MapViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCF86C52A69DD8400C5B8C7 /* MapViewX.swift */; };
 		BDCF86C82A69DE2200C5B8C7 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCF86C72A69DE2200C5B8C7 /* StoreView.swift */; };
+		BDCF86C92A69E5B200C5B8C7 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD5E63562A670330009B9EDE /* Poppins-ExtraLight.ttf */; };
+		BDCF86CA2A69E5B200C5B8C7 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD5E63572A670330009B9EDE /* Poppins-ThinItalic.ttf */; };
+		BDCF86CB2A69E5B200C5B8C7 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD5E63582A670330009B9EDE /* Poppins-ExtraLightItalic.ttf */; };
+		BDCF86CC2A69E5B200C5B8C7 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD5E63592A670330009B9EDE /* Poppins-BoldItalic.ttf */; };
+		BDCF86CD2A69E5B200C5B8C7 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD5E635A2A670330009B9EDE /* Poppins-Light.ttf */; };
+		BDCF86CE2A69E5B200C5B8C7 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD5E635B2A670330009B9EDE /* Poppins-Medium.ttf */; };
+		BDCF86CF2A69E5B200C5B8C7 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD5E635C2A670330009B9EDE /* Poppins-SemiBoldItalic.ttf */; };
+		BDCF86D02A69E5B200C5B8C7 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD5E635D2A670330009B9EDE /* Poppins-ExtraBoldItalic.ttf */; };
+		BDCF86D12A69E5B200C5B8C7 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD5E635E2A670330009B9EDE /* Poppins-ExtraBold.ttf */; };
+		BDCF86D22A69E5B200C5B8C7 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD5E635F2A670330009B9EDE /* Poppins-BlackItalic.ttf */; };
+		BDCF86D32A69E5B200C5B8C7 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = BD5E63602A670330009B9EDE /* OFL.txt */; };
+		BDCF86D42A69E5B200C5B8C7 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD5E63612A670330009B9EDE /* Poppins-Regular.ttf */; };
+		BDCF86D52A69E5B200C5B8C7 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD5E63622A670330009B9EDE /* Poppins-LightItalic.ttf */; };
+		BDCF86D62A69E5B200C5B8C7 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD5E63632A670330009B9EDE /* Poppins-Bold.ttf */; };
+		BDCF86D72A69E5B200C5B8C7 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD5E63642A670330009B9EDE /* Poppins-Black.ttf */; };
+		BDCF86D82A69E5B200C5B8C7 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD5E63652A670330009B9EDE /* Poppins-Thin.ttf */; };
+		BDCF86D92A69E5B200C5B8C7 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD5E63662A670330009B9EDE /* Poppins-SemiBold.ttf */; };
+		BDCF86DA2A69E5B200C5B8C7 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD5E63672A670330009B9EDE /* Poppins-Italic.ttf */; };
+		BDCF86DB2A69E5B200C5B8C7 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD5E63682A670330009B9EDE /* Poppins-MediumItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -197,6 +216,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDCF86C92A69E5B200C5B8C7 /* Poppins-ExtraLight.ttf in Resources */,
+				BDCF86CA2A69E5B200C5B8C7 /* Poppins-ThinItalic.ttf in Resources */,
+				BDCF86CB2A69E5B200C5B8C7 /* Poppins-ExtraLightItalic.ttf in Resources */,
+				BDCF86CC2A69E5B200C5B8C7 /* Poppins-BoldItalic.ttf in Resources */,
+				BDCF86CD2A69E5B200C5B8C7 /* Poppins-Light.ttf in Resources */,
+				BDCF86CE2A69E5B200C5B8C7 /* Poppins-Medium.ttf in Resources */,
+				BDCF86CF2A69E5B200C5B8C7 /* Poppins-SemiBoldItalic.ttf in Resources */,
+				BDCF86D02A69E5B200C5B8C7 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				BDCF86D12A69E5B200C5B8C7 /* Poppins-ExtraBold.ttf in Resources */,
+				BDCF86D22A69E5B200C5B8C7 /* Poppins-BlackItalic.ttf in Resources */,
+				BDCF86D32A69E5B200C5B8C7 /* OFL.txt in Resources */,
+				BDCF86D42A69E5B200C5B8C7 /* Poppins-Regular.ttf in Resources */,
+				BDCF86D52A69E5B200C5B8C7 /* Poppins-LightItalic.ttf in Resources */,
+				BDCF86D62A69E5B200C5B8C7 /* Poppins-Bold.ttf in Resources */,
+				BDCF86D72A69E5B200C5B8C7 /* Poppins-Black.ttf in Resources */,
+				BDCF86D82A69E5B200C5B8C7 /* Poppins-Thin.ttf in Resources */,
+				BDCF86D92A69E5B200C5B8C7 /* Poppins-SemiBold.ttf in Resources */,
+				BDCF86DA2A69E5B200C5B8C7 /* Poppins-Italic.ttf in Resources */,
+				BDCF86DB2A69E5B200C5B8C7 /* Poppins-MediumItalic.ttf in Resources */,
 				BDC30DF12A65F19A00BBE0DB /* Preview Assets.xcassets in Resources */,
 				BDC30DEE2A65F19A00BBE0DB /* Assets.xcassets in Resources */,
 				BDC30DFC2A66F59E00BBE0DB /* Welcome.storyboard in Resources */,
@@ -352,7 +390,6 @@
 				INFOPLIST_FILE = sustainaBite/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -381,7 +418,6 @@
 				INFOPLIST_FILE = sustainaBite/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
