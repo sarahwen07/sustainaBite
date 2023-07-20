@@ -16,6 +16,7 @@ struct sustainaBiteApp: App {
         }
     }
 }
+
 struct MapLocation: Identifiable {
     let id = UUID()
     let name : String

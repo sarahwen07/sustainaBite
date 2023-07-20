@@ -24,59 +24,64 @@ struct MapView: View {
     @State private var mapRegion: MKCoordinateRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 47.6062, longitude: -122.3321), span: MKCoordinateSpan(latitudeDelta: 0.04, longitudeDelta: 0.04))
     
     var body: some View {
-        ZStack{
-            ScrollView {
-                VStack {
+        NavigationView {
+            ZStack{
+                ScrollView {
+                    
                     VStack {
-                        Text("Local Groceries / Farmer Market")
-                            .font(Font.custom("Poppins-Medium", size: 18))
-                            .foregroundColor(Color("darkGreen"))
-                            .padding()
+                        VStack {
+                            Text("Local Groceries / Farmer Market")
+                                .font(Font.custom("Poppins-Medium", size: 18))
+                                .foregroundColor(Color("darkGreen"))
+                                .padding()
+                                .background(Rectangle()
+                                    .foregroundColor(.white))
+                                .cornerRadius(15)
+                                .shadow(radius: 5)
+                                .padding(.horizontal, -100)
+                            
+                                                        
+                                
+                            Map(coordinateRegion: $mapRegion,
+                                annotationItems: mapLocations,
+                                annotationContent: {locations in
+                                
+                                //                            MapPin(coordinate: locations.coordinate, tint: Color("lapisBlue"))
+                                
+                                MapAnnotation(coordinate: locations.coordinate, content: {
+                                    Text(locations.name).font(Font.custom("Poppins-Medium", size: 18))
+                                        .font(.caption)
+                                        .foregroundColor(Color("darkGreen"))
+                                    
+                                    Image(systemName: "mappin").foregroundColor(Color("lapisBlue"))
+                                })
+                                
+                                
+                                
+                                //                MapMarker(coordinate: locations.coordinate, tint: .red)
+                            })
+                            .padding(.all, 10.0)
+                            .frame(width: 300.0, height: 500.0)
                             .background(Rectangle()
                                 .foregroundColor(.white))
                             .cornerRadius(15)
                             .shadow(radius: 5)
-                            .padding(.horizontal, -100)
-                            .padding(.bottom, 150)
-                            .padding(.top, 140)
-                        
-                        Map(coordinateRegion: $mapRegion,
-                            annotationItems: mapLocations,
-                            annotationContent: {locations in
-                            
-//                            MapPin(coordinate: locations.coordinate, tint: Color("lapisBlue"))
-                            
-                            MapAnnotation(coordinate: locations.coordinate, content: {
-                                Text(locations.name).font(Font.custom("Poppins-Medium", size: 18))
-                                    .font(.caption)
-                                    .foregroundColor(Color("darkGreen"))
                                 
-                                    Image(systemName: "mappin").foregroundColor(Color("lapisBlue"))
-                                })
-                            
-                            
-                            
-                            //                MapMarker(coordinate: locations.coordinate, tint: .red)
-                        })
-                        .padding(.all, 10.0)
-                        .frame(width: 300.0, height: 500.0)
-                        .background(Rectangle()
-                            .foregroundColor(.white))
-                        .cornerRadius(15)
-                        .shadow(radius: 5)
-                        
+                        }
+                        .padding([.leading, .bottom, .trailing], 100.0)
                     }
-                    .padding([.leading, .bottom, .trailing], 100.0)
-                }
-            }.background(Color("almond").ignoresSafeArea())
+                }.background(Color("almond").ignoresSafeArea())
+            }
         }
+        
     }
-    
-    struct MapView_Previews: PreviewProvider {
-        static var previews: some View {
-            MapView()
-        }
-    }
-    
 }
+    
+struct MapView_Previews: PreviewProvider {
+    static var previews: some View {
+        MapView()
+    }
+}
+    
+
 //     MapAnnotation(coordinate: locations.coordinate, content:{Text(locations.name)})

@@ -155,6 +155,35 @@ struct AboutView: View {
                     }
                 }.frame(maxHeight: .infinity)
             }.background(Color("almond").ignoresSafeArea())
+                .toolbar {
+                    ToolbarItemGroup(placement: .status) {
+                        NavigationLink(destination: WelcomeView()) {
+                            Image("mapIcon")
+                                .frame(width: 100.0, height: 100.0)
+                        }
+                        .padding(.top)
+                        .navigationBarTitleDisplayMode(.inline)
+                        .navigationBarHidden(false)
+                        
+                        NavigationLink(destination: MapView()) {
+                            Text("📱")
+                                .font(.system(size: 56))
+                        }
+                        .padding(.top)
+                        .navigationBarTitleDisplayMode(.inline)
+                        .navigationBarHidden(false)
+                       
+                        NavigationLink(destination: FoodView()) {
+                            Text("✋")
+                                .font(.system(size: 56))
+                        }
+                        .padding(.top)
+                        .navigationBarTitleDisplayMode(.inline)
+                        .navigationBarHidden(false)
+                        
+                    }
+
+                }
         }
     }
 }
