@@ -18,6 +18,7 @@
 		BDC30DFA2A66F58E00BBE0DB /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC30DF92A66F58E00BBE0DB /* FoodView.swift */; };
 		BDC30DFC2A66F59E00BBE0DB /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC30DFB2A66F59E00BBE0DB /* Welcome.storyboard */; };
 		BDCF86C62A69DD8400C5B8C7 /* MapViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCF86C52A69DD8400C5B8C7 /* MapViewX.swift */; };
+		BDCF86C82A69DE2200C5B8C7 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCF86C72A69DE2200C5B8C7 /* StoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		BDC30DF92A66F58E00BBE0DB /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
 		BDC30DFB2A66F59E00BBE0DB /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		BDCF86C52A69DD8400C5B8C7 /* MapViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewX.swift; sourceTree = "<group>"; };
+		BDCF86C72A69DE2200C5B8C7 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				BDC30DEB2A65F19900BBE0DB /* WelcomeView.swift */,
 				BD5E63692A670CE7009B9EDE /* AboutView.swift */,
 				BD7F87202A6862E300BB59D6 /* MapView.swift */,
+				BDCF86C72A69DE2200C5B8C7 /* StoreView.swift */,
 				BD8EBD802A699E66005BBA7A /* MapSecond.swift */,
 				BD8EBD7E2A6992E2005BBA7A /* dataSets.swift */,
 				BDC30DFB2A66F59E00BBE0DB /* Welcome.storyboard */,
@@ -214,6 +217,7 @@
 				BDC30DFA2A66F58E00BBE0DB /* FoodView.swift in Sources */,
 				BD8EBD812A699E66005BBA7A /* MapSecond.swift in Sources */,
 				BDC30DEC2A65F19900BBE0DB /* WelcomeView.swift in Sources */,
+				BDCF86C82A69DE2200C5B8C7 /* StoreView.swift in Sources */,
 				BDC30DEA2A65F19900BBE0DB /* sustainaBiteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -140,7 +140,7 @@ struct FoodView: View {
             }
             .foregroundColor(Color("darkGreen"))
             .listRowBackground(Color("offWhite"))
-            .tint(Color("lapisBlue"))
+            .tint(Color("teaGreen"))
              
               
           //------------------ Font Changes ------------------
@@ -176,7 +176,7 @@ struct FoodView: View {
                     .navigationBarTitleDisplayMode(.inline)
      //               .navigationBarHidden(false)
                     
-                    NavigationLink(destination: MapView()) {
+                    NavigationLink(destination: MapViewX()) {
                         Image("mapIcon")
                             .resizable(capInsets: EdgeInsets())
                             .aspectRatio(contentMode: .fit)

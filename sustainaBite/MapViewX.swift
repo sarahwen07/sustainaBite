@@ -5,7 +5,7 @@
 //
 import SwiftUI
 import MapKit
-struct mapViewX: View {
+struct MapViewX: View {
  let mapLocations = [
     MapLocation(name: "PCC", latitude: 47.60914, longitude: -122.33529),
     MapLocation(name: "Firefly Kitchens", latitude: 47.66448, longitude: -122.36808),
@@ -22,7 +22,7 @@ struct mapViewX: View {
    ScrollView {
     VStack {
       Text("Local Groceries / Farmer Market")
-      .font(Font.custom("Poppins-Medium", size: 18))
+      .font(Font.custom("Poppins-Medium", size: 20))
       .foregroundColor(Color("darkGreen"))
       .padding()
 //      .background(Rectangle()
@@ -49,7 +49,7 @@ struct mapViewX: View {
       .cornerRadius(15)
       .shadow(radius: 5)
       // .offset(y: 15)
-      NavigationLink(destination: HomeView()) {
+      NavigationLink(destination: StoreView()) {
         Text("Find grocery stores near you")
           .font(Font.custom("Poppins-SemiBold", size: 18))
           .foregroundColor(Color("darkGreen"))
@@ -69,7 +69,7 @@ struct mapViewX: View {
 }
 struct mapViewX_Previews: PreviewProvider {
  static var previews: some View {
-  mapViewX()
+  MapViewX()
  }
 }
 //  MapAnnotation(coordinate: locations.coordinate, content:{Text(locations.name)})

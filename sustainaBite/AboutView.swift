@@ -169,7 +169,7 @@ struct AboutView: View {
                         .navigationBarTitleDisplayMode(.inline)
                         .navigationBarHidden(false)
                         
-                        NavigationLink(destination: MapView()) {
+                        NavigationLink(destination: MapViewX()) {
                             Image("mapIcon")
                                 .resizable(capInsets: EdgeInsets())
                                 .aspectRatio(contentMode: .fit)

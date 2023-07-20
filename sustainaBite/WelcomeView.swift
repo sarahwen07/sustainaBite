@@ -51,7 +51,7 @@ struct WelcomeView: View {
                         .shadow(radius: 5)
                         .padding(.horizontal, 10.0)
                         
-                        NavigationLink(destination: MapView()) {
+                        NavigationLink(destination: MapViewX()) {
                             Text("Local Farmer Markets")
                                 .font(Font.custom("Poppins-Medium", size: 22))
                                 .foregroundColor(Color("darkGreen"))
